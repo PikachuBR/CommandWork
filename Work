@@ -1,0 +1,38 @@
+------------------------------------------------------------- DBFD -------------------------------------------------------------------------
+                                                       [VARIABLES NEEDED!]
+                                                       { coins }
+
+
+
+$thumbnail[$authorAvatar]
+$title[💵 Great Job!]
+$description[You worked so hard! You have got **$$random[1200;2400]**]
+$footer[Worked was $randomText[👮‍♂️ Police;🔴⚪ Youtuber;📏 Teacher;❤ Life Saver]]
+$color[#FFFF00]
+$footerIcon[$authorAvatar]
+$setVar[coins;$sum[$getVar[coins];$random[1200;2400]]]
+
+
+
+
+
+----------------------------------------------------------  AOI.JS -------------------------------------------------------------------------
+                                                      [VARIABLES NEEDED!]
+                                                       { coins }
+
+
+
+
+module.exports = ({
+   name: "work"
+   code: `
+$thumbnail[$authorAvatar]
+$title[💵 Great Job!]
+$description[You worked so hard! You have got **$$random[1200;2400]**]
+$footer[Worked was $randomText[👮‍♂️ Police;🔴⚪ Youtuber;📏 Teacher;❤ Life Saver]]
+$color[YELLOW]
+$setGlobalUserVar[coins;$sum[$getGlobalUserVar[coins];$random[1200;2400]]]`
+
+
+
+
